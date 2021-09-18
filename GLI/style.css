@@ -1,0 +1,124 @@
+ *{
+     margin: 0;
+     padding: 0;
+     line-height: 1.7;
+     box-sizing: border-box;
+ }
+body{
+    background-image: linear-gradient(120deg, #f34, #f634d5);
+    font-size: 18px;
+    font-family:'Poppins',sans-serif;
+    min-height: 100vh;
+}
+nav{
+    font-size: 2rem;
+    color: white;
+}
+nav, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+label,
+form input ,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;  
+    outline: none;
+    border-radius: 5px;
+}
+form button{
+  background: white;
+  transition: all 0.5s ease-in-out;
+  color:#f34;
+  cursor: pointer;
+}
+form button:hover{
+    background:#f34;
+    color: white;
+}
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+    margin: 0px 150px;
+}
+.todolist{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    margin: 0.75rem;
+    padding: 0.95rem;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+}
+.todo li{
+    flex: 1;
+    margin: 0 10px;
+}
+.todolist button{
+    margin: 0 2px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.completed-btn{
+    background-color: green;
+    color: white;
+    outline: none;
+    border:none; 
+    border-color: green;
+}
+.completed-btn:hover{
+    border:none; 
+}
+.deleted-btn{
+    background-color: red;
+    color: white;
+    outline: none;
+    border:none; 
+}
+.fa-check-circle,.fa-trash, .fa-edit{
+    pointer-events: none;
+}
+.edit-btn{
+    background-color: grey;
+    color: white;
+    outline: none;
+    border:none; 
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
